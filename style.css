@@ -1,0 +1,142 @@
+body{
+ background-color: #ccc9c9;
+}
+.profile-container{
+  padding: 20px 50px 15% 310px;
+  color: #626262;
+}
+.cover-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+.user-stats {
+  margin-bottom: 30px;
+}
+.user-stats ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.user-stats li {
+  text-align: center;
+}
+
+.user-stats p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.user-stats span {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.profile-details{
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.pd-row{
+  display: flex;
+  align-items: flex-start;
+}
+.pd-img{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.pd-row div h3{
+  font-size: 25px;
+  font-weight: 600;
+}
+.pd-row  div p{
+  font-size: 13px;
+}
+.post-col {
+  margin-top: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 4fr));
+  gap: 20px;
+}
+
+.post-col.visible {
+  display: grid;
+}
+
+* {
+box-sizing: border-box;
+}
+.post-col img{
+  max-width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+.pd-right button{
+  background: #1876f2;
+  border: 0;
+  outline: 0;
+  padding: 6px 10px;
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  border-radius: 3px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.pd-right button img{
+  height: 15px;
+  margin-right: 10px;
+}
+.pd-right button:first-child{
+  background: #e4e6eb;
+  color: black;
+}
+.pd-right{
+  text-align: right;
+}
+.pd-right a{
+  background: #e4e6eb;
+  border-radius: 3px;
+  padding: 12px;
+  display: inline-flex;
+  margin-top: 30px;
+}
+.pd-right a img{
+  width: 20px;
+}
+.user-info{
+  margin-top: 33px;
+}
+.profile-info{
+  display: flex;
+  align-self: flex-start; 
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.info-col{
+  flex-basis: 25%;
+}
+.post-col{
+  flex-basis: 65%;
+}
+.profile-intro{
+  background: #e4e6eb;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+.profile-intro h3{
+  font-weight: 600;
+}
