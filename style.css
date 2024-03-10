@@ -120,6 +120,21 @@ box-sizing: border-box;
   background-color: transparent;
   resize: none;
 }
+.add-post-links-right{
+  text-align: right;
+}
+.add-post-links-right button{
+  background-color:  #3897f0;
+  border: 0;
+  outline: 0;
+  padding: 6px 10px;
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  border-radius: 3px;
+  margin-left: 10px;
+  cursor: pointer;
+}
 .add-post-links{
   display: flex;
   margin-top: 10px;
