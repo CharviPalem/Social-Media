@@ -1526,6 +1526,153 @@
         <!-- Overlay -->
         <div id="postcard-see-more-popup-overlay"
             class="hidden z-10 h-screen w-screen backdrop-blur-sm fixed top-0 left-0"></div>
+        <!-- Edit Profile Popup -->
+        <div id="edit-popup"
+            class="w-[900px] z-20 hidden h-[700px] overflow-auto rounded-lg bg-blue-400 fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] mx-auto p-4">
+            <h2 class="font-semibold text-4xl">Edit Profile</h2>
+            <!--Options-->
+            <div class="box">
+                <div class="opt-col">
+                    <div class="options">
+                        <a class="tab-link" href="#account-general">General</a>
+                        <a class="tab-link" href="#account-change-password">Change password</a>
+                        <a class="tab-link" href="#account-info">Info</a>
+                        <a class="tab-link" href="#account-social-links">Links</a>
+                    </div>
+                </div>
+                <!--Content-->
+                <div class="content">
+                    <div id="account-general" class="tab-content active">
+                        <!-- General tab content goes here -->
+                        <br>
+                        <label class="pl-[20px] font-semibold">Profile</label>
+                        <div class="card-body media align-items-center">
+                            <img src="profile-pic.png" class="d-block ui-w-80 rounded-circle">
+                            <div class="media-body ml-4">
+                                <label class="btn btn-outline-primary">
+                                    Upload new photo
+                                    <input type="file" class="account-settings-fileinput">
+                                </label> &nbsp;
+                                <button type="button" class="btn btn-default md-btn-flat bg-light">Reset</button>
+                                <div class="text-light small mt-1">Allowed JPG, GIF or PNG. Max size of 800K</div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <label class="pl-[20px] font-semibold">Cover Image</label>
+                        <div class="card-body media cover-image align-items-center">
+                            <img src="feed-image-3.png"
+                                class="d-block w-50 p-1 translucent-bg h-50 d-inline-block translucent-bg rounded-4">
+                            <div class="media-body ml-4">
+                                <label class="btn btn-outline-primary">
+                                    Upload new photo
+                                    <input type="file" class="account-settings-fileinput">
+                                </label> &nbsp;
+                                <button type="button" class="btn btn-default md-btn-flat bg-light">Reset</button>
+                                <div class="text-light small mt-1">Allowed JPG, GIF or PNG. Max size of 800K</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control " placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">E-mail</label>
+                                <input type="text" class="form-control mb-1" placeholder="name@mail.com">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Phone</label>
+                                <input type="text" class="form-control" placeholder="+91 9248256891">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="account-change-password" class="tab-content">
+                        <!-- Change password tab content goes here -->
+                        <div class="tab-pane fade active" id="account-change-password">
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    <label class="form-label">Current password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">New password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Repeat new password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="account-info" class="tab-content">
+                        <!-- Info tab content goes here -->
+                        <div class="tab-pane fade active" id="account-info">
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    <label class="form-label">Bio</label>
+                                    <textarea class="form-control" rows="5"
+                                        placeholder="Write something here...."></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Birthday</label>
+                                    <input type="text" class="form-control" placeholder="month dd, yyyy">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">State</label>
+                                    <input type="text" class="form-control" placeholder="State">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Country</label>
+                                    <select class="custom-select">
+                                        <option>Select Country</option>
+                                        <option>India</option>
+                                        <option>Pakistan</option>
+                                        <option>Bangladesh</option>
+                                        <option>Sri Lanka</option>
+                                        <option>Bhutan</option>
+                                        <option>China</option>
+                                        <option>Nepal</option>
+                                        <option>Burma</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="account-social-links" class="tab-content">
+                        <!-- Links tab content goes here -->
+                        <div class="tab-pane fade active" id="account-social-links">
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    <label class="form-label">Twitter</label>
+                                    <input type="text" class="form-control" value>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Facebook</label>
+                                    <input type="text" class="form-control" value>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">LinkedIn</label>
+                                    <input type="text" class="form-control" value>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Instagram</label>
+                                    <input type="text" class="form-control" value>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-right mt-3">
+                <button type="button" class="btn btn-primary">Save changes</button>&nbsp;
+                <button type="button" class="btn btn-default">Cancel</button>
+            </div>
+
+        </div>
         <!-- Main Content -->
         <div class="h-full w-[97%] mx-auto">
             <!-- Profile-Cover-Img -->
@@ -1561,7 +1708,7 @@
                     </div>
                     <!-- Edit Profile, connections and Logout -->
                     <div class="flex self-start">
-                        <button
+                        <button id="edit-profile-button"
                             class="flex justify-center items-center bg-slate-300 edit-profile p-2 mr-3 px-4 rounded-md">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
@@ -2039,12 +2186,21 @@
                                     <div class="relative flex">
                                         <!-- Post -->
                                         <div
-                                            class="w-full group mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
+                                            class="w-full group relative mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
                                             <a href="#" class="w-full h-full">
-                                                <img class="object-cover h-full w-full rounded-lg group-hover:opacity-75 duration-200"
+                                                <img class="object-cover h-full w-full rounded-lg duration-200"
                                                     src="assets/the-horse-is-moving-on-the-meadow-generative-ai-free-photo.jpg"
                                                     alt="" />
                                             </a>
+                                            <!-- Caption -->
+                                            <div
+                                                class="caption w-full h-1/2 bg-black/50 opacity-0 group-hover:opacity-100 absolute bottom-0 text-white flex p-3 rounded-b-lg">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iusto
+                                                reiciendis? Veritatis
+                                                nisi exercitationem, provident ea assumenda, veniam optio fugit pariatur
+                                                saepe totam labore
+                                                eveniet minima fuga ab quia nobis.
+                                            </div>
                                         </div>
                                         <!-- Like Comments Share and Save -->
                                         <div class="flex flex-col mt-3 items-center pl-3 justify-between pt-3">
@@ -2438,12 +2594,21 @@
                                     <div class="relative flex">
                                         <!-- Post -->
                                         <div
-                                            class="w-full group mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
+                                            class="w-full group relative mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
                                             <a href="#" class="w-full h-full">
-                                                <img class="object-cover h-full w-full rounded-lg group-hover:opacity-75 duration-200"
+                                                <img class="object-cover h-full w-full rounded-lg duration-200"
                                                     src="assets/the-horse-is-moving-on-the-meadow-generative-ai-free-photo.jpg"
                                                     alt="" />
                                             </a>
+                                            <!-- Caption -->
+                                            <div
+                                                class="caption w-full h-1/2 bg-black/50 opacity-0 group-hover:opacity-100 absolute bottom-0 text-white flex p-3 rounded-b-lg">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iusto
+                                                reiciendis? Veritatis
+                                                nisi exercitationem, provident ea assumenda, veniam optio fugit pariatur
+                                                saepe totam labore
+                                                eveniet minima fuga ab quia nobis.
+                                            </div>
                                         </div>
                                         <!-- Like Comments Share and Save -->
                                         <div class="flex flex-col mt-3 items-center pl-3 justify-between pt-3">
@@ -2837,12 +3002,21 @@
                                     <div class="relative flex">
                                         <!-- Post -->
                                         <div
-                                            class="w-full group mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
+                                            class="w-full group relative mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
                                             <a href="#" class="w-full h-full">
-                                                <img class="object-cover h-full w-full rounded-lg group-hover:opacity-75 duration-200"
+                                                <img class="object-cover h-full w-full rounded-lg duration-200"
                                                     src="assets/the-horse-is-moving-on-the-meadow-generative-ai-free-photo.jpg"
                                                     alt="" />
                                             </a>
+                                            <!-- Caption -->
+                                            <div
+                                                class="caption w-full h-1/2 bg-black/50 opacity-0 group-hover:opacity-100 absolute bottom-0 text-white flex p-3 rounded-b-lg">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iusto
+                                                reiciendis? Veritatis
+                                                nisi exercitationem, provident ea assumenda, veniam optio fugit pariatur
+                                                saepe totam labore
+                                                eveniet minima fuga ab quia nobis.
+                                            </div>
                                         </div>
                                         <!-- Like Comments Share and Save -->
                                         <div class="flex flex-col mt-3 items-center pl-3 justify-between pt-3">
@@ -3238,12 +3412,21 @@
                                     <div class="relative flex">
                                         <!-- Post -->
                                         <div
-                                            class="w-full group mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
+                                            class="w-full group relative mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
                                             <a href="#" class="w-full h-full">
-                                                <img class="object-cover h-full w-full rounded-lg group-hover:opacity-75 duration-200"
+                                                <img class="object-cover h-full w-full rounded-lg "
                                                     src="assets/the-horse-is-moving-on-the-meadow-generative-ai-free-photo.jpg"
                                                     alt="" />
                                             </a>
+                                            <!-- Caption -->
+                                            <div
+                                                class="caption w-full h-1/2 bg-black/50 opacity-0 group-hover:opacity-100 absolute bottom-0 text-white flex p-3 rounded-b-lg">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iusto
+                                                reiciendis? Veritatis
+                                                nisi exercitationem, provident ea assumenda, veniam optio fugit pariatur
+                                                saepe totam labore
+                                                eveniet minima fuga ab quia nobis.
+                                            </div>
                                         </div>
                                         <!-- Like Comments Share and Save -->
                                         <div class="flex flex-col mt-3 items-center pl-3 justify-between pt-3">
@@ -3638,12 +3821,21 @@
                                     <div class="relative flex">
                                         <!-- Post -->
                                         <div
-                                            class="w-full group mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
+                                            class="w-full group relative mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
                                             <a href="#" class="w-full h-full">
-                                                <img class="object-cover h-full w-full rounded-lg group-hover:opacity-75 duration-200"
+                                                <img class="object-cover h-full w-full rounded-lg "
                                                     src="assets/the-horse-is-moving-on-the-meadow-generative-ai-free-photo.jpg"
                                                     alt="" />
                                             </a>
+                                            <!-- Caption -->
+                                            <div
+                                                class="caption w-full h-1/2 bg-black/50 opacity-0 group-hover:opacity-100 absolute bottom-0 text-white flex p-3 rounded-b-lg">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iusto
+                                                reiciendis? Veritatis
+                                                nisi exercitationem, provident ea assumenda, veniam optio fugit pariatur
+                                                saepe totam labore
+                                                eveniet minima fuga ab quia nobis.
+                                            </div>
                                         </div>
                                         <!-- Like Comments Share and Save -->
                                         <div class="flex flex-col mt-3 items-center pl-3 justify-between pt-3">
@@ -4038,12 +4230,21 @@
                                     <div class="relative flex">
                                         <!-- Post -->
                                         <div
-                                            class="w-full group mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
+                                            class="w-full group relative mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
                                             <a href="#" class="w-full h-full">
-                                                <img class="object-cover h-full w-full rounded-lg group-hover:opacity-75 duration-200"
+                                                <img class="object-cover h-full w-full rounded-lg "
                                                     src="assets/the-horse-is-moving-on-the-meadow-generative-ai-free-photo.jpg"
                                                     alt="" />
                                             </a>
+                                            <!-- Caption -->
+                                            <div
+                                                class="caption w-full h-1/2 bg-black/50 opacity-0 group-hover:opacity-100 absolute bottom-0 text-white flex p-3 rounded-b-lg">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iusto
+                                                reiciendis? Veritatis
+                                                nisi exercitationem, provident ea assumenda, veniam optio fugit pariatur
+                                                saepe totam labore
+                                                eveniet minima fuga ab quia nobis.
+                                            </div>
                                         </div>
                                         <!-- Like Comments Share and Save -->
                                         <div class="flex flex-col mt-3 items-center pl-3 justify-between pt-3">
@@ -4440,12 +4641,21 @@
                                     <div class="relative flex">
                                         <!-- Post -->
                                         <div
-                                            class="w-full group mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
+                                            class="w-full group relative mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
                                             <a href="#" class="w-full h-full">
-                                                <img class="object-cover h-full w-full rounded-lg group-hover:opacity-75 duration-200"
+                                                <img class="object-cover h-full w-full rounded-lg "
                                                     src="assets/the-horse-is-moving-on-the-meadow-generative-ai-free-photo.jpg"
                                                     alt="" />
                                             </a>
+                                            <!-- Caption -->
+                                            <div
+                                                class="caption w-full h-1/2 bg-black/50 opacity-0 group-hover:opacity-100 absolute bottom-0 text-white flex p-3 rounded-b-lg">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iusto
+                                                reiciendis? Veritatis
+                                                nisi exercitationem, provident ea assumenda, veniam optio fugit pariatur
+                                                saepe totam labore
+                                                eveniet minima fuga ab quia nobis.
+                                            </div>
                                         </div>
                                         <!-- Like Comments Share and Save -->
                                         <div class="flex flex-col mt-3 items-center pl-3 justify-between pt-3">
@@ -4839,12 +5049,21 @@
                                     <div class="relative flex">
                                         <!-- Post -->
                                         <div
-                                            class="w-full group mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
+                                            class="w-full group relative mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
                                             <a href="#" class="w-full h-full">
-                                                <img class="object-cover h-full w-full rounded-lg group-hover:opacity-75 duration-200"
+                                                <img class="object-cover h-full w-full rounded-lg "
                                                     src="assets/the-horse-is-moving-on-the-meadow-generative-ai-free-photo.jpg"
                                                     alt="" />
                                             </a>
+                                            <!-- Caption -->
+                                            <div
+                                                class="caption w-full h-1/2 bg-black/50 opacity-0 group-hover:opacity-100 absolute bottom-0 text-white flex p-3 rounded-b-lg">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iusto
+                                                reiciendis? Veritatis
+                                                nisi exercitationem, provident ea assumenda, veniam optio fugit pariatur
+                                                saepe totam labore
+                                                eveniet minima fuga ab quia nobis.
+                                            </div>
                                         </div>
                                         <!-- Like Comments Share and Save -->
                                         <div class="flex flex-col mt-3 items-center pl-3 justify-between pt-3">
@@ -5238,12 +5457,21 @@
                                     <div class="relative flex">
                                         <!-- Post -->
                                         <div
-                                            class="w-full group mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
+                                            class="w-full group relative mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
                                             <a href="#" class="w-full h-full">
-                                                <img class="object-cover h-full w-full rounded-lg group-hover:opacity-75 duration-200"
+                                                <img class="object-cover h-full w-full rounded-lg "
                                                     src="assets/the-horse-is-moving-on-the-meadow-generative-ai-free-photo.jpg"
                                                     alt="" />
                                             </a>
+                                            <!-- Caption -->
+                                            <div
+                                                class="caption w-full h-1/2 bg-black/50 opacity-0 group-hover:opacity-100 absolute bottom-0 text-white flex p-3 rounded-b-lg">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iusto
+                                                reiciendis? Veritatis
+                                                nisi exercitationem, provident ea assumenda, veniam optio fugit pariatur
+                                                saepe totam labore
+                                                eveniet minima fuga ab quia nobis.
+                                            </div>
                                         </div>
                                         <!-- Like Comments Share and Save -->
                                         <div class="flex flex-col mt-3 items-center pl-3 justify-between pt-3">
@@ -5604,6 +5832,38 @@
     </div>
 
     <!-- script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all tab links
+            const tabLinks = document.querySelectorAll('.tab-link');
+
+            // Add click event listener to each tab link
+            tabLinks.forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+
+                    // Remove 'active' class from all tab links
+                    tabLinks.forEach(function (tabLink) {
+                        tabLink.classList.remove('active');
+                    });
+
+                    // Add 'active' class to the clicked tab link
+                    link.classList.add('active');
+
+                    // Hide all tab contents
+                    const tabContents = document.querySelectorAll('.tab-content');
+                    tabContents.forEach(function (content) {
+                        content.classList.remove('active');
+                    });
+
+                    // Show the corresponding tab content
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetContent = document.getElementById(targetId);
+                    targetContent.classList.add('active');
+                });
+            });
+        });
+    </script>
     <script src="js/script.js"></script>
 </body>
 

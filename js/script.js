@@ -207,6 +207,8 @@ postcard_seemore_popup_overlay.addEventListener("click", () => {
   let see_more_popup = document.querySelector("#postcard-see-more-popup");
   see_more_popup.classList.add("hidden");
   postcard_seemore_popup_overlay.classList.add("hidden");
+  let edit_popup = document.querySelector('#edit-popup');
+  edit_popup.classList.add('hidden');
 });
 let postcard_seemore_popup_close = document.querySelector(
   "#postcard-seemore-popup-close"
@@ -246,3 +248,11 @@ for (let direct_share_on_share_close of arr_direct_share_on_share_close) {
     overlay.classList.add('hidden')
   })
 }
+// Edit Profile popup
+let edit_profile_button = document.querySelector('#edit-profile-button');
+edit_profile_button.addEventListener('click', () => {
+  let edit_popup = document.querySelector('#edit-popup');
+  edit_popup.classList.remove('hidden');
+  let overlay = document.querySelector("#postcard-see-more-popup-overlay");
+  overlay.classList.remove('hidden');
+})
